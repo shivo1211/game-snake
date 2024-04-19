@@ -1,0 +1,22 @@
+/* Style the canvas */
+#gameCanvas {
+    border: 1px solid black;
+    display: block;
+    margin: 20px auto;
+}
+
+/* Style the score display */
+#score {
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+/* Style the game over message */
+.game-over {
+    display: none;
+    font-size: 24px;
+    color: red;
+    text-align: center;
+    margin-top: 10px;
+}
