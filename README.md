@@ -2,7 +2,6 @@
 This repository contains a classic Snake game implemented using HTML, CSS, and JavaScript. The project demonstrates how to create a simple yet engaging game with separate files for the HTML structure, CSS styling, and JavaScript logic. It supports both keyboard controls and touch gestures, making it playable on both desktop and mobile devices.
 
 **Features**
-
 Canvas-based Game: The game is played on an HTML canvas element, allowing for dynamic rendering of the game board, snake, and food.
 Separate Files: The code is organized into separate files for HTML (index.html), CSS (style.css), and JavaScript (script.js) for improved maintainability and clarity.
 Keyboard and Touch Controls: The game supports arrow key controls for desktop players and touch gestures for mobile users. Players can swipe up, down, left, or right to change the direction of the snake.
