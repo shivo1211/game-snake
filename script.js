@@ -1,7 +1,7 @@
 // Constants
 const canvas = document.getElementById('gameCanvas');
 const context = canvas.getContext('2d');
-const gridSize = 20; // Size of each grid cell
+const gridSize = 10; // Size of each grid cell
 let score = 0;
 let gameInterval;
 const scoreDisplay = document.getElementById('score');
