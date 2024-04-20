@@ -151,16 +151,4 @@ function gameLoop() {
 }
 
 // Add touch event listeners
-canvas.addEventListener('touchstart', handleTouchStart);
-canvas.addEventListener('touchend', handleTouchEnd);
-
-// Add keyboard event listener
-window.addEventListener('keydown', handleKeyDown);
-
-// Add event listener to restart the game when tapping the game over message
-gameOverMessage.addEventListener('click', function() {
-    location.reload();
-});
-
-// Start the game
-startGame();
+canvas.addEventListener
