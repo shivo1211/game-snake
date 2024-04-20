@@ -20,3 +20,17 @@
     text-align: center;
     margin-top: 10px;
 }
+.container {
+    position: relative;
+}
+
+#arrowButtons {
+    position: absolute;
+    bottom: 20px;
+    width: 100%;
+    text-align: center;
+}
+
+#arrowButtons button {
+    margin: 0 5px;
+}
