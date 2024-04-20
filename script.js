@@ -1,7 +1,7 @@
 // Constants
 const canvas = document.getElementById('gameCanvas');
 const context = canvas.getContext('2d');
-const gridSize = 10; // Size of each grid cell
+const gridSize = 20; // Size of each grid cell
 let score = 0;
 let gameInterval;
 const scoreDisplay = document.getElementById('score');
@@ -29,6 +29,7 @@ function startGame() {
 
 // Handle touch start
 function handleTouchStart(event) {
+    event.preventDefault(); // Prevent default touch behavior
     const touch = event.touches[0];
     touchStartX = touch.clientX;
     touchStartY = touch.clientY;
@@ -36,6 +37,7 @@ function handleTouchStart(event) {
 
 // Handle touch end
 function handleTouchEnd(event) {
+    event.preventDefault(); // Prevent default touch behavior
     const touch = event.changedTouches[0];
     touchEndX = touch.clientX;
     touchEndY = touch.clientY;
@@ -128,7 +130,7 @@ function update() {
     // Check if the snake has eaten the food
     if (head.x === food.x && head.y === food.y) {
         // Increase the score
-        score += 1;
+        score += 10;
 
         // Update the score display
         scoreDisplay.textContent = `Score: ${score}`;
@@ -156,7 +158,7 @@ canvas.addEventListener('touchend', handleTouchEnd);
 window.addEventListener('keydown', handleKeyDown);
 
 // Add event listener to restart the game when tapping the game over message
-gameOverMessage.addEventListener('click', function () {
+gameOverMessage.addEventListener('click', function() {
     location.reload();
 });
 
