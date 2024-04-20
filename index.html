@@ -6,21 +6,22 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Snake Game</title>
-    <!-- Link to the CSS file -->
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <!-- Game Canvas -->
-    <canvas id="gameCanvas" width="350" height="350"></canvas>
-
-    <!-- Score Display -->
+    <canvas id="gameCanvas" width="400" height="400"></canvas>
     <div id="score">Score: 0</div>
-
-    <!-- Game over message -->
     <div id="gameOverMessage" class="game-over">Game Over! Tap to restart.</div>
 
-    <!-- Link to the JavaScript file -->
+    <!-- Arrow buttons -->
+    <div id="arrowButtons">
+        <button id="upButton">↑</button>
+        <button id="leftButton">←</button>
+        <button id="rightButton">→</button>
+        <button id="downButton">↓</button>
+    </div>
+
     <script src="script.js"></script>
 </body>
 
